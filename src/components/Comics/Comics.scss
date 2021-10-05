@@ -1,0 +1,53 @@
+@import '../../constants/vars.scss';
+
+.comics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.comics__item{
+    width: 300px;
+    background-color: $color-light;
+    margin: $spacing-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    overflow: hidden;
+
+    &:hover{
+        transform: rotate(1deg) scale(0.98);
+        box-shadow: 4px 0px 0px $color-white, 
+                    8px 0px 0px $color-black,
+                    12px 0px 0px $color-white, 
+                    16px 0px 0px $color-black,
+                    20px 0px 0px $color-white;
+    }
+}
+.comics__name{
+    display: flex;
+    margin: auto;
+    padding: $spacing-small;
+    font-family: Quicksand;
+    color: $color-gray-darken;
+    font-weight: 600;
+}
+.comics__img{
+    width: 100%;
+}
+.comics__btn{
+    padding: 15px 0;
+    background-color: $color-blue-lighten;
+    font-family: Quicksand;
+    font-weight: 600;
+    color: $color-gray-darken;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-red-lighten;
+        color: $color-blue-lighten;
+    }
+}

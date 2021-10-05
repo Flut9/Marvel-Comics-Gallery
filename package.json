@@ -1,0 +1,32 @@
+{
+  "name": "marvel-comics-gallery",
+  "version": "1.0.0",
+  "description": "Marvel comics gallery development with technologies: axios, marvel api, vanilla js(es6 modules), scss, post css, parcel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel public/index.html --open",
+    "build": "parcel build public/index.html"
+  },
+  "keywords": [
+    "vanilla",
+    "js",
+    "es6",
+    "modules",
+    "axios",
+    "marvel-api",
+    "parcel",
+    "scss",
+    "post-css"
+  ],
+  "author": "Kirill Maximchik",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "postcss-modules": "^3.2.2"
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "constants": "0.0.2"
+  }
+}

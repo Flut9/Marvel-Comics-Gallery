@@ -1,0 +1,58 @@
+@import '../../constants/vars.scss';
+
+.preload__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('img/preload-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+.preload__title{
+    font-size: 60px;
+    color: $color-blue-lighten;
+    font-family: Quicksand;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.preload__text{
+    color: $color-blue-lighten;
+    font-family: Quicksand;
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.preload__span{
+    font-size: 22px;
+    color: $color-light;
+    font-family: Noto Sans Display;
+    font-style: italic;
+    margin-top: 5px;
+}
+.preload__btn{
+    width: 200px;
+    height: 60px;
+    background-color: $color-blue-lighten;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: $color-error;
+    color: $color-white;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    border-radius: 10px;
+    margin-top: 30px;
+
+    &:hover{
+        background-color: $color-gray;
+    }
+}

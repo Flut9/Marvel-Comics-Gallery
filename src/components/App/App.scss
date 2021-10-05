@@ -1,0 +1,48 @@
+@import '../../constants/vars.scss';
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+}
+
+*{
+    scrollbar-color: $color-blue-lighten, $color-dark;
+    scrollbar-width: 8px;
+}
+
+body{
+    background-color: $color-dark;
+    position: relative;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $color-blue-lighten;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: $color-dark;
+}
+
+:global(.img-contain){
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+:global(.img-cover){
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+:global(.bg-contain){
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

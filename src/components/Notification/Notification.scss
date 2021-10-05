@@ -1,0 +1,23 @@
+@import '../../constants/vars.scss';
+
+.notification{
+    position: fixed;
+    bottom: $spacing-large;
+    left: $spacing-large;
+    display: flex;
+    align-items: center;
+    padding: $spacing-medium $spacing-large;
+    border-radius: 10px;
+    background-color: $color-blue-lighten;
+}
+.notification__img{
+    width: 30px;
+    height: 30px;
+    margin-left: $spacing-large;
+}
+.notification__name{
+    font-family: Quicksand;
+    color: $color-gray-darken;
+    font-size: 15px;
+    font-weight: 200;
+}

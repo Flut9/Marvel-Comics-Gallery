@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,300;0,500;1,200&family=Quicksand:wght@300;400;500;700&display=swap");
+.comics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comics__item {
+  width: 300px;
+  background-color: #f8f9fa;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.comics__item:hover {
+  -webkit-transform: rotate(1deg) scale(0.98);
+          transform: rotate(1deg) scale(0.98);
+  -webkit-box-shadow: 4px 0px 0px #fff, 8px 0px 0px #000, 12px 0px 0px #fff, 16px 0px 0px #000, 20px 0px 0px #fff;
+          box-shadow: 4px 0px 0px #fff, 8px 0px 0px #000, 12px 0px 0px #fff, 16px 0px 0px #000, 20px 0px 0px #fff;
+}
+
+.comics__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  font-family: Quicksand;
+  color: #212121;
+  font-weight: 600;
+}
+
+.comics__img {
+  width: 100%;
+}
+
+.comics__btn {
+  padding: 15px 0;
+  background-color: #eceff1;
+  font-family: Quicksand;
+  font-weight: 600;
+  color: #212121;
+  font-size: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.comics__btn:hover {
+  background-color: #ef9a9a;
+  color: #eceff1;
+}
+/*# sourceMappingURL=Comics.css.map */
